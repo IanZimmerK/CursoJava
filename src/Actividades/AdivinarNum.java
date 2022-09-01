@@ -8,7 +8,6 @@ public class AdivinarNum {
         int numeroaleatorio;
         //genero el numero aleatorio entre 1-100
         numeroaleatorio = (int) (Math.random() * 100 + 1);
-        System.out.println(numeroaleatorio);
         do {
             System.out.println("Digite un numero: ");
             num = scanner.nextInt();
@@ -23,6 +22,6 @@ public class AdivinarNum {
                 System.out.println("Numero de intentos: "+intentos);
             }
         }while (num!=numeroaleatorio);
-        System.out.println("Correcto!!");
+        System.out.println("Correcto!!, has acertado el numero en "+intentos+ " intentos");
     }
 }
